@@ -1,0 +1,21 @@
+<h1>All Voters</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Location</th>
+    <th>Phone Number</th>
+    <th>Last Contact</th>
+  </tr>
+  <% @voters.each do |v| %>
+    <tr>
+      <td><%= v.name %></td>
+      <td><%= v.age %></td>
+      <td><%= v.location %></td>
+      <td><%= v.phone_number %></td>
+      <td><%= v.last_contact %></td>
+    </tr>
+  <% end %>
+</table>
+
+<!-- if time allows: date_of_birth shoule be legible -->

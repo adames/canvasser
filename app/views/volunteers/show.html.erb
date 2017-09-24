@@ -3,5 +3,25 @@
 <p>DOB: <%= @volunteer.date_of_birth %></p>
 <p>Political Interests: <%= @volunteer.political_interests %>
 
+<h2>Voters</h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Location</th>
+    <th>Phone Number</th>
+    <th>Last Contact</th>
+  </tr>
+  <% @volunteer.voters.each do |v| %>
+    <tr>
+      <td><%= v.name %></td>
+      <td><%= v.age %></td>
+      <td><%= v.location %></td>
+      <td><%= v.phone_number %></td>
+      <td><%= v.last_contact %></td>
+    </tr>
+  <% end %>
+</table>
+
 <!-- if time allows: add update and delete buttons here -->
 <!-- if time allows: date of birth should be legible -->

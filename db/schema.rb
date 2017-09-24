@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20170924185611) do
   end
 
   create_table "voters", force: :cascade do |t|
+    t.integer "volunteer_id"
     t.string "name"
     t.integer "age"
     t.text "location"
@@ -30,6 +31,7 @@ ActiveRecord::Schema.define(version: 20170924185611) do
     t.datetime "last_contact"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["volunteer_id"], name: "index_voters_on_volunteer_id"
   end
 
 end
