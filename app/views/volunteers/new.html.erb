@@ -1,0 +1,8 @@
+<%= form_for @volunteer, url: {action: "create"} do |v| %>
+  First Name: <%= v.text_field :first_name %><br/>
+  Last Name: <%= v.text_field :last_name %><br/>
+  Middle Initial: <%= v.text_field :middle_initial %><br/>
+  Date of Birth<%= v.date_field :date_of_birth %><br/>
+  Political Interests: <%= v.text_area :political_interests %><br/>
+  <%= v.submit "Sign Up" %>
+<% end %>
