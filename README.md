@@ -1,24 +1,25 @@
-# README
+A small project intended to solve following interview puzzle.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+_Summary:_ Hold volunteer data and match them with voters
+_Client:_ Karen - running for office in Michigan
+_Request:_ I need volunteers to give me their first name, last name, middle initial, and date of birth. I also need to know what their political interests are. I also need to match these people with the voter data that I have about voters in my district. The format of the voter data will be name, age, location, phone number, and date last contacted.
+---
+_Requirements I have set:_
+* A form for volunteers to sign up.
+* Criteria for what makes a good match
+* An app that matches volunteers with voters
+* Extra Credit: a system that prioritizes which voters to reach out to.
+---
+_Volunteer Info:_
+First Name
+Last Name
+Middle Initial
+Date of Birth
+Political Interests
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+_Voter Info:_
+Name
+Age
+Location
+Phone number
+Date last contacted
