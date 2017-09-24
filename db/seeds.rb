@@ -11,8 +11,19 @@
   Voter.create({
     name: Faker::Name.name,
     age: Faker::Number.between(18, 90),
-    location: `#{Faker::Address.street_address}, #{Faker::Address.city}, MI #{Faker::Number.number(5)}`,
+    location: Faker::Address.street_address,
     phone_number: Faker::Number.number(10),
     last_contact: Faker::Time.between(730.days.ago, Date.today, :all)
+  })
+end
+
+# Volunteers (let's say 10 people signed up)
+10.times do
+  Volunteer.create({
+    first_name: Faker::Name.first_name,
+    middle_initial: `#{(65 + rand(26)).chr}.`,
+    last_name: Faker::Name.last_name,
+    date_of_birth: Faker::Time.between(90.years.ago, 18.years.ago, :all),
+    political_interests: Faker::StarWars.specie,
   })
 end
