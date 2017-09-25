@@ -8,7 +8,6 @@ _Request:_ I need volunteers to give me their first name, last name, middle init
 ---
 _Requirements I have set:_
 * A form for volunteers to sign up.
-* Criteria for what makes a good match
 * An app that matches volunteers with voters
 * In the future: a system that prioritizes which voters to reach out to.
 ---
