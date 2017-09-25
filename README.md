@@ -1,4 +1,6 @@
 A small project intended to solve an interview puzzle.
+
+[Demo](https://youtu.be/nDNxPzRm_Qs)
 ---
 _Summary:_ Hold volunteer data and match them with voters
 _Client:_ Karen - running for office in Michigan
@@ -8,7 +10,7 @@ _Requirements I have set:_
 * A form for volunteers to sign up.
 * Criteria for what makes a good match
 * An app that matches volunteers with voters
-* Extra Credit: a system that prioritizes which voters to reach out to.
+* In the future: a system that prioritizes which voters to reach out to.
 ---
 _Volunteer Info:_
 First Name
