@@ -10,6 +10,7 @@ class VolunteersController < ApplicationController
   def create
     @volunteer = Volunteer.new(volunteer_params)
     @volunteer.save
+    @volunteer.allocate_voters
     redirect_to volunteer_path(@volunteer.id)
   end
 

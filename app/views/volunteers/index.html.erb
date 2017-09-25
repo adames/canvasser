@@ -1,6 +1,7 @@
 <h1>All Volunteers</h1>
-<table>
+<table class="table">
   <tr>
+    <th>Volunteer Page</th>
     <th>First Name</th>
     <th>Middle Initial</th>
     <th>Last Name</th>
@@ -9,6 +10,7 @@
   </tr>
   <% @volunteers.each do |v| %>
     <tr>
+      <td><%= link_to v.id, volunteer_path(v) %></td>
       <td><%= v.first_name %></td>
       <td><%= v.middle_initial %></td>
       <td><%= v.last_name %></td>
@@ -17,6 +19,3 @@
     </tr>
   <% end %>
 </table>
-
-<!-- if time allows: add links to each user that goes to their show page -->
-<!-- if time allows: date_of_birth shoule be legible -->
