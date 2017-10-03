@@ -1,7 +1,7 @@
 
 # Volunteers (let's say 10 people signed up)
 volunteers = []
-10.times do
+100.times do
   volunteers << Volunteer.create({
     first_name: Faker::Name.first_name,
     middle_initial: (65 + rand(26)).chr,
@@ -11,8 +11,8 @@ volunteers = []
   })
 end
 
-# In 2012, 1,503,662 voted in Michigan. For testing purposes, I'll make DB of 150 voters.
-150.times do |i|
+# In 2012, 1,503,662 voted in Michigan. For testing purposes, I'll make DB of 1,500 voters.
+1500.times do |i|
   Voter.create({
     name: Faker::Name.name,
     age: Faker::Number.between(18, 90),
